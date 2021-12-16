@@ -1,0 +1,22 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "LUT Front-End Kurssi",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hpro1/LUTFrontEnd.git"
+  },
+  "author": "Daniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hpro1/LUTFrontEnd/issues"
+  },
+  "homepage": "https://github.com/Hpro1/LUTFrontEnd#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
