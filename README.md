@@ -1,2 +1,2 @@
 # LUTFrontEnd
-Software Development Skills: Front-End - course
+Software Development Skills: Front-End - course README file
