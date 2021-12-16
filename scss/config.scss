@@ -1,0 +1,18 @@
+$primary-color: #162224;
+$secondary-color: #00b6b6;
+$show-home-image: true;
+$home-image: url(../img/background.jpg);
+
+@mixin animation {
+  transition: all 0.4s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+}
