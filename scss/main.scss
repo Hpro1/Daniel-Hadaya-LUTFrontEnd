@@ -1,6 +1,91 @@
-$primary-color: #293031;
+@import "config";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  @include background;
   background: $primary-color;
   color: white;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+//headers 
+h1, h2, h3 {
+  font-weight: 300;
+  margin: 0;
+
+  &.lg-heading { //Large header name size
+    font-size: 6rem;
+  }
+
+  &.sm-heading { //Small header
+    margin-bottom: 3ren;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($color: $primary-color, $amount: 2), 0.1);
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: fixed; //menu button stays at top of page
+  z-index: 2; //layer position
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 1rem;
+
+    a{
+      padding: 0.3rem;
+
+      &:hover .fa-twitter{
+        @include animation();
+        color: #1DA1F2;
+      }
+
+      &:hover .fa-facebook{
+        @include animation();
+        color: #4267B2;
+      }
+
+      &:hover .fa-steam{
+        @include animation();
+        color: #2a475e;
+      }
+
+      &:hover .fa-github{
+        @include animation();
+        color: black;
+      }
+
+      &:hover .fa-youtube{
+        @include animation();
+        color: #FF0000;
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden; //no scrollbar
+    h1 {
+      margin-top: 20vh;
+    }
+  }
 }
