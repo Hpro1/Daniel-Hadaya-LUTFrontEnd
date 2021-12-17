@@ -1,0 +1,43 @@
+//Menu button
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include animation;
+
+    .btn-line {
+        width: 28px;
+        height: 2px;
+        margin: 0 0 5px 0;
+        background-color: #fff;
+        @include animation;
+    }
+
+    // Rotate the menu button to x
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line{
+        //Top line rotates to x
+        &:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+            background: #00b6b6;
+        }
+
+        //Middle line hides
+        &:nth-child(2) {
+            opacity: 0;
+        }
+
+        //Bottom line rotates to x
+        &:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+            background: #00b6b6;
+
+        }
+
+        }
+    }
+}
