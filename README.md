@@ -6,7 +6,7 @@ Personal website (c) Daniel Hadaya
 
 How to run the website
 
-- Access the website from: https://hpro1.github.io/LUTFrontEnd/
+- Access the website from: https://hpro1.github.io/Daniel-Hadaya-LUTFrontEnd/
 OR
 - Download the code from GitHub, and then navigate yourself to /dist/index.html and you should be able to access all the other sited via your browser.
 OR
