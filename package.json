@@ -3,21 +3,21 @@
   "version": "1.0.0",
   "description": "LUT Front-End Kurssi",
   "main": "index.js",
-  "homepage": "http://Hpro1.github.io/LUTFrontEnd",
+  "homepage": "https://hpro1.github.io/Daniel-Hadaya-LUTFrontEnd/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive", 
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hpro1/LUTFrontEnd.git"
+    "url": "git+https://github.com/Hpro1/Daniel-Hadaya-LUTFrontEnd.git"
   },
   "author": "Daniel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Hpro1/LUTFrontEnd/issues"
+    "url": "https://github.com/Hpro1/Daniel-Hadaya-LUTFrontEnd/issues"
   },
-  "homepage": "https://github.com/Hpro1/LUTFrontEnd#readme",
+  "homepage": "https://github.com/Hpro1/Daniel-Hadaya-LUTFrontEnd#readme",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "node-sass": "^7.0.0"
